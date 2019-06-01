@@ -1,8 +1,9 @@
 {
-  "name": "jotang-news-knowledge-graph",
+  "name": "childhood",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.19.1",
     "antd-mobile": "^2.2.13",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
@@ -29,7 +30,7 @@
     "not op_mini all"
   ],
   "main": "src/main.js",
-  "repository": "git@github.com:allenx555/JoTang-News-KnowledgeGraph.git",
+  "repository": "git@github.com:allenx555/childhood.git",
   "author": "allenx555 <allenx555@163.com>",
   "license": "MIT",
   "devDependencies": {
@@ -37,9 +38,9 @@
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/plugin-proposal-decorators": "^7.4.0",
     "@babel/plugin-transform-runtime": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-import": "^1.11.2",
     "node-sass": "^4.11.0"
   }
 }
