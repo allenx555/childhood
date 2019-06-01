@@ -2,10 +2,8 @@
 
 主要技术栈：
 
-    前端：React.mobile
+    前端：React + antd.mobile
     后端：Flask + MySQL
-
-## 在线演示
 
 ## 开发环境
 
@@ -17,12 +15,11 @@
     yarn # or npm i
     yarn dev # or npm run dev
 
-
 #### 后端运行
-
 
 建议先进入虚拟环境，这里以 virtualenv 为例：
 
     cd api
     # source venv/bin/activate
     pip install -r requirements.txt
+    python run.py
