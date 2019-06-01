@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/editor.scss";
 import pic from "../static/diary.jpg";
+import arrow from "../static/arrow.png";
 
 export default class Editor extends React.Component {
   state = {
@@ -19,6 +20,7 @@ export default class Editor extends React.Component {
     return (
       <div style={{ "background-color": "#009688" }}>
         <div className="head">
+          <img src={arrow} alt="arrow" id="arrow"/>
           <div className="text">
             <h2>{this.state.year}</h2>&nbsp;&nbsp;
             <h3>{this.state.date}</h3>
