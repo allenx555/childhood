@@ -1,17 +1,9 @@
 import React from "react";
+import { TextareaItem } from "antd-mobile";
 import "../assets/editor.scss";
 import arrow from "../static/arrow.png";
 
 export default class Editor extends React.Component {
-  state = {
-    year: "请输入年份",
-    date: "请输入日期",
-    title: "请输入标题",
-    content1: "",
-    picurl: "",
-    content2: "",
-    content3: ""
-  };
   render() {
     return (
       <div style={{ "background-color": "#009688" }}>
@@ -20,15 +12,16 @@ export default class Editor extends React.Component {
             <img src={arrow} alt="arrow" id="arrow" />
           </a>
           <div className="text">
-            <h2>{this.state.year}</h2>&nbsp;&nbsp;
-            <h3>{this.state.date}</h3>
-            <h1>{this.state.title}</h1>
+            <TextareaItem
+              placeholder="请输入日期"
+              data-seed="logId"
+              ref={el => (this.autoFocusInst = el)}
+              autoHeight
+            />
           </div>
         </div>
         <div className="content">
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.content1}</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.content2}</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.content3}</p>
+          <TextareaItem placeholder="请输入文本" rows={17} count={100} />
         </div>
       </div>
     );

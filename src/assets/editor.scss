@@ -32,7 +32,13 @@ p {
   line-height: 24px;
 }
 #arrow {
-    width: 18px;
-    padding: 38px 0 0 10px;
-    float: left;
+  width: 18px;
+  padding: 38px 0 0 10px;
+  float: left;
+}
+.am-list-item {
+  background-color: transparent;
+}
+.am-textarea-control textarea{
+  text-align: center;
 }
