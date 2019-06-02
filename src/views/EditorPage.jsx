@@ -20,7 +20,9 @@ export default class Editor extends React.Component {
     return (
       <div style={{ "background-color": "#009688" }}>
         <div className="head">
-          <img src={arrow} alt="arrow" id="arrow"/>
+          <a href="/diary">
+            <img src={arrow} alt="arrow" id="arrow" />
+          </a>
           <div className="text">
             <h2>{this.state.year}</h2>&nbsp;&nbsp;
             <h3>{this.state.date}</h3>

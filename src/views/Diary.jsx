@@ -13,22 +13,28 @@ export default class Diary extends React.Component {
     return (
       <div id="content">
         <div id="left">
-          <img
-            src={more}
-            alt="more"
-            style={{ "margin-top": 55, width: 96, float: "left" }}
-          />
+          <a href="/poster">
+            <img
+              src={more}
+              alt="more"
+              style={{ "margin-top": 55, width: 96, float: "left" }}
+            />
+          </a>
         </div>
         <div id="right">
           {this.state.arr.map(data => (
             <Diarylist arr={data} />
           ))}
         </div>
-        <div><img
-            src={plus}
-            alt="plus"
-            style={{  "margin-top": 580,float: "right" }}
-          /></div>
+        <div>
+          <a href="/editor">
+            <img
+              src={plus}
+              alt="plus"
+              style={{ "margin-top": 580, float: "right" }}
+            />
+          </a>
+        </div>
       </div>
     );
   }
